@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span>Options</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="filter-mode tool-row">
+  <mat-form-field>
+    <mat-select placeholder="Filters" ngInit="filters[0]" >
+      <mat-option *ngFor="let filter of filters" [value]="filter.value" selected="" (click)="onFilter(filter.value)">
+        {{ filter.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="view-mode tool-row">
+  <label class="view-title">View Mode</label>
+  <mat-icon  (click)="viewMode('grid')">grid_on</mat-icon>
+  <mat-icon  (click)="viewMode('list')">view_list</mat-icon>
+</div>
+
+
+

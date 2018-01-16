@@ -1,0 +1,38 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~ng2-toastr/bundles/ng2-toastr.min";
+
+body {
+  overflow: hidden;
+
+  h1, h2, h3, h4,label{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+  }
+}
+
+panono-side-bar {
+  width: 15rem;
+  overflow: auto;
+  display: block;
+  height: 100%;
+}
+
+panono-image-layout {
+  display: block;
+  padding: 40px 0;
+  margin: 0 15px;
+}
+
+panono-main-menu {
+  .mat-button-toggle-label-content {
+    display: inline-block;
+    line-height: 36px;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+}
+
+.mat-drawer-container {
+  background: #444141;
+  overflow: auto;
+  height: 50rem;
+}

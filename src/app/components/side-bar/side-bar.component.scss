@@ -1,0 +1,25 @@
+@import '~sass/_variables';
+
+.tool-row {
+  margin: auto;
+  width: 11rem;
+  padding: 15px 0;
+
+  .view-title {
+    font-size: 12px;
+    display: block;
+    margin: 10px 0;
+    color: gray;
+  }
+
+  mat-icon {
+    margin-right: 10px;
+    font-size: 1.8em;
+    color: #353535;
+    cursor: pointer;
+
+    &.active {
+      color: $gray-color;
+    }
+  }
+}

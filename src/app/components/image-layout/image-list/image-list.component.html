@@ -1,0 +1,8 @@
+<mat-list-item >
+<panono-image-select-btn [image]="image"></panono-image-select-btn>
+  <h4 matLine> {{ image.title }} </h4>
+  <p matLine>
+    <time matLine>{{ image.created_at | date: mediumDate }}</time>
+  </p>
+<mat-list-item >
+

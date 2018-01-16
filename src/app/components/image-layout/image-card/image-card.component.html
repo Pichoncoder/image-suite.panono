@@ -1,0 +1,9 @@
+<mat-card class="panono-image-card" data-id="{{ image.id }}">
+    <panono-image-select-btn [image]="image"></panono-image-select-btn>
+  <img mat-card-image [src]="image.image_data.url">
+  <mat-card-header>
+    <mat-card-title>  {{ image.title}}</mat-card-title>
+    <mat-card-subtitle>{{ image.created_at | date: mediumDate }}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+

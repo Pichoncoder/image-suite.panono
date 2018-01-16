@@ -1,0 +1,14 @@
+@import '~sass/_variables';
+
+.mat-icon {
+  cursor: pointer;
+  float: right;
+  position: relative;
+
+  &.selected {
+    color: $fav-color;
+  }
+}
+
+
+

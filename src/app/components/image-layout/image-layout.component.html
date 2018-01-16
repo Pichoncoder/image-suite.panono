@@ -1,0 +1,20 @@
+<!--grid -->
+<mat-grid-list *ngIf="viewImages.length && view ==='grid'"
+               cols="4/viewImages.length"
+               rowHeight="280"
+               gutterSize="10">
+  <mat-grid-tile *ngFor="let image of viewImages; let i = index;">
+    <panono-image-card [image]=image></panono-image-card>
+  </mat-grid-tile >
+</mat-grid-list>
+
+<!--list -->
+<mat-list *ngIf="viewImages.length && view ==='list'">
+  <panono-image-list *ngFor="let image of viewImages; let i = index;" [image]=image></panono-image-list>
+</mat-list>
+
+<!-- none -->
+<div *ngIf="!viewImages.length" cols="1" class="no-starred-images">
+  <div id="no-images"> <h3>No starred images</h3> </div>
+</div>
+
